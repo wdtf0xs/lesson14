@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #F7F6F4;
+    scroll-behavior: smooth;
+
+}
+
+/*------------------------HEADER------------------------------*/
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10vh;
+}
+
+header>img{
+    width: 178px;
+    height: 22px;
+    margin: 42px 190px 0 170px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 42px;
+}
+
+nav>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style-type: none;
+}
+
+nav>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+
+nav>ul>li>ul{
+    list-style-type: none;
+}
+
+nav>ul>li{
+    position: relative;
+}
+
+li{
+    color: #333;
+    font-family: 'Taviraj', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.dropdown{
+    display: none;
+    padding-left: 20px;
+    width: 160px;
+    height: 110px;
+    background: rgba(255, 255, 255, 0.70);
+    position: absolute;
+}
+
+.dropdown a{
+    text-decoration: none;
+    display: block;
+    color: #000;
+    font-family: 'Taviraj', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+nav>ul>li:hover .dropdown{
+    display: block;
+}
+
+/*------------------------MAIN------------------------------*/
+
+.offer{
+    width: 1110px;
+    height: 505px;
+    flex-shrink: 0;
+    background: #F1DDC9;
+    margin: 90px 165px 80px;
+    display: flex;
+
+}
+
+section>img{
+    width: 325px;
+    height: 467px;
+    flex-shrink: 0;
+    margin: 14px 56px 24px 0;
+}
+
+.head{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.head h3{
+    color: #333;
+    font-family: 'Taviraj', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 80px; /* 133.333% */
+    letter-spacing: 1.2px;
+    width: 450px;
+    height: 160px;
+    margin: 56px 0 32px;
+}
+
+section>p{
+    width: 529px;
+    color: #333;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-bottom: 80px;
+}
+
+section>button{
+    width: 208px;
+    height: 62px;
+    flex-shrink: 0;
+    background: #D84727;
+    color: #FFF;
+    font-family: 'Taviraj', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    border: none;
+}
+
+
+section>h4{
+    color: #333;
+    font-family: 'Taviraj', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 40px; /* 111.111% */
+    letter-spacing: 0.72px;
+    margin-bottom: 130px;
+    margin-left: 165px;
+}
+
+.deals{
+    display: flex;
+    gap: 30px;
+    width: 1110px;
+    margin: 100px 165px 130px 165px;
+}
+
+.deals>section{
+    width: 260px;
+    height: 280px;
+    background: #FFF;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+
+.deals>section>img{
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    top: -50px;
+    left: 22px;
+}
+
+section>span{
+    color: #333;
+    font-family: 'Taviraj', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
+    margin: 32px 0 32px 24px;
+}
+
+.text{
+    margin: 130px 0 30px 165px;
+}
+
+.news{
+    width: 1110px;
+    height: 505px;
+    margin: 0 0 160px 165px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.news img{
+    Width: 610px;
+    Height: 484px;
+}
+
+
+.news section>p:nth-child(1){
+    width: 163px;
+    color: #777;
+    font-family: 'Taviraj', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 0.4px;
+    margin: 0;
+}
+
+.news section>p:nth-child(2){
+    width: 350px;
+    color: #333;
+    font-family: 'Taviraj', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px; /* 133.333% */
+    letter-spacing: 0.72px;
+    margin-top: 16px;
+    margin-right: 55px;
+}
